@@ -11,10 +11,8 @@ class ModelClass {
     private val showAnotherFactButton = onView(withId(R.id.showFactButton))
 
     fun verifyTextIsNull() {
-        if (text != null) {
-            println("TextView is not null")
-        } else
-            println("TextView is null")
+        text != null
+        println("TextView is not null")
     }
 
     fun verifyText() {
